@@ -3,6 +3,7 @@ import 'package:checkgon/styles/formStyle.dart';
 import 'package:checkgon/styles/textStyle.dart';
 import 'package:checkgon/styles/theme.color.dart';
 import 'package:checkgon/view.models/home.view.model.dart';
+import 'package:checkgon/views/call.state.view.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -42,7 +43,13 @@ class _HomeViewState extends State<HomeView> {
             )),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const CallStateView(),
+                ),
+              );
+            },
             icon: const Icon(Icons.menu_outlined),
             color: themeColorApp.white,
           )

@@ -41,6 +41,9 @@ dependencies:
   intl: ^0.19.0
   phone_state: ^1.0.4
   hexcolor: ^3.0.1
+  permission_handler: ^11.3.1
+  fluttertoast: ^8.2.8
+  supabase_flutter: ^2.6.0
 
 dev_dependencies:
   flutter_test:
